@@ -6,15 +6,6 @@
   max-width: 100% !important;
 }
 
-.im_dialogs_col_wrap {
-  width: 320px !important;
-}
-
-// will be overwritten by layout's css (desktop or mobile)
-.im_history_col_wrap {
-  width: calc(100% - 320px) !important;
-}
-
 .im_message_wrap {
   max-width: inherit !important;
 }
