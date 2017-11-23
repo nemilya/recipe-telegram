@@ -18,5 +18,14 @@ module.exports = (Franz) => {
   };
 
   Franz.injectCSS(path.join(__dirname, 'service.css'));
+
+  // css mixins for correct view in mobile or desktop layouts
+  if (localStorage.layout_selected == '"mobile"'){
+    Franz.injectCSS(path.join(__dirname, 'service_layout_mobile.css'));
+  }
+  else{
+    Franz.injectCSS(path.join(__dirname, 'service_layout_desktop.css'));
+  }
+
   Franz.loop(getMessages);
 };
