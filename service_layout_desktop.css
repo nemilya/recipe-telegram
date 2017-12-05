@@ -1,7 +1,0 @@
-.im_dialogs_col_wrap {
-  width: 320px !important;
-}
-
-.im_history_col_wrap {
-  width: calc(100% - 320px) !important;
-}
