@@ -21,7 +21,7 @@ module.exports = Franz => {
   };
 
 
-  if (localStorage.layout_selected == '"desktop"'){
+  if (localStorage.getItem("layout_selected") === null || localStorage.getItem("layout_selected") == '"desktop"'){
     document.querySelector('body').classList.add('isDesktop')
   }
 
